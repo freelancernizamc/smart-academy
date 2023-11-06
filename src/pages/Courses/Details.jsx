@@ -37,6 +37,7 @@ const Details = ({ data }) => {
       <div className="flex justify-around items-center my-10">
         <div className="w-1/2 mr-5">
           <img
+            style={{ borderRadius: "0 200px 200px 200px" }}
             src={imageURL}
             alt={courseName}
             className="w-full rounded-lg mb-4"

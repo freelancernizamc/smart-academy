@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import Banner from "../Home/Banner/Banner";
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+import { Helmet } from "react-helmet-async";
 
 const Courses = () => {
   const {
@@ -24,6 +25,9 @@ const Courses = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Courses ~ Smart Academy</title>
+      </Helmet>
       <Banner />
       <section>
         <SectionTitle
