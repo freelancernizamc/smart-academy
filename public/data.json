@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "courseName": "Introduction to Python Programming",
+    "description": "Learn the fundamentals of Python programming with this beginner-friendly course.",
+    "duration": "8 weeks",
+    "price": "$199.99",
+    "imageURL": "https://i.postimg.cc/dVPNrcHj/paython.jpg"
+  },
+  {
+    "id": 2,
+    "courseName": "Web Development with HTML and CSS",
+    "description": "Build stunning websites with HTML and CSS in this hands-on course.",
+    "duration": "10 weeks",
+    "price": "$249.99",
+    "imageURL": "https://i.postimg.cc/d1jZHrw0/webdev.png"
+  },
+  {
+    "id": 3,
+    "courseName": "Data Science and Machine Learning",
+    "description": "Explore data science and machine learning concepts in this comprehensive course.",
+    "duration": "12 weeks",
+    "price": "$299.99",
+    "imageURL": "https://i.postimg.cc/N0r14KKy/datascience.jpg"
+  },
+  {
+    "id": 4,
+    "courseName": "Digital Marketing Strategies",
+    "description": "Learn effective digital marketing strategies to boost your online presence.",
+    "duration": "6 weeks",
+    "price": "$149.99",
+    "imageURL": "https://i.postimg.cc/wMFJvJGr/digitalm.jpg"
+  },
+  {
+    "id": 5,
+    "courseName": "Mobile App Development with React Native",
+    "description": "Create cross-platform mobile apps using React Native in this course.",
+    "duration": "9 weeks",
+    "price": "$199.99",
+    "imageURL": "https://i.postimg.cc/7YMt3QFv/reactnative.jpg"
+  },
+  {
+    "id": 6,
+    "courseName": "Introduction to Artificial Intelligence",
+    "description": "Dive into the world of AI and its applications in this introductory course.",
+    "duration": "8 weeks",
+    "price": "$249.99",
+    "imageURL": "https://i.postimg.cc/TY9QL5bf/artificial.jpg"
+  }
+]
