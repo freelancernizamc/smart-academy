@@ -1,18 +1,17 @@
-import logo from "../../../../public/logo.png";
+import logo from "/logo.png";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-10 bg-neutral text-neutral-content">
+      <footer className="footer p-10 bg-[#110624] text-neutral-content">
         <aside>
-          <img className="w-[50px]" src={logo} alt="Logo" />
-          <p>
-            Smart Academy
-            <br />
-            Providing reliable tech since 1992
-          </p>
+          <img className="w-[80px]" src={logo} alt="Logo" />
+          <h1 className="text-2xl font-bold text-cyan-300">
+            Smart <span className=" text-yellow-400">Academy</span>
+          </h1>
+          <p>Providing reliable tech since 1992</p>
         </aside>
         <nav>
-          <header className="footer-title">Social</header>
+          <header className="footer-title mt-5">Follow Us</header>
           <div className="grid grid-flow-col gap-4">
             <a>
               <svg

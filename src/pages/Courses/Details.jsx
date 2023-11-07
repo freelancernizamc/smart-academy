@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Banner from "../Home/Banner/Banner";
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+import EnrolledCourses from "../Dashboard/EnrolledCourses";
 
-const Details = ({ data }) => {
+const Details = ({ data, onEnroll }) => {
   const { id } = useParams();
   const selectedCourse = data?.find((c) => c.id === parseInt(id));
 
@@ -55,8 +56,13 @@ const Details = ({ data }) => {
             <p className="text-gray-700 text-base">Duration: {duration}</p>
             <p className="text-gray-700 text-base">Price: {price}</p>
           </div>
-          <button className="btn btn-primary">
-            <Link to="/">Enroll Now</Link>
+          <button
+            className="btn btn-primary"
+            onClick={() => {
+              EnrolledCourses(course);
+            }}
+          >
+            <Link to="/dashboard/enrolledcourses">Enroll Now</Link>
           </button>
         </div>
       </div>

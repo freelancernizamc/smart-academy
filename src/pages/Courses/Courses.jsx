@@ -35,7 +35,7 @@ const Courses = () => {
           heading={"Our Courses"}
         ></SectionTitle>
       </section>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-7">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-7 mb-10">
         {courses.map((course, index) => (
           <div key={index}>
             <img
@@ -47,7 +47,7 @@ const Courses = () => {
 
             <p>Duration: {course.duration}</p>
             <p>Price: {course.price}</p>
-            <button className="btn btn-primary">
+            <button className="btn bg-cyan-300 text-black mt-2">
               <Link to={`/details/${course.id}`}>See Details</Link>
             </button>
           </div>

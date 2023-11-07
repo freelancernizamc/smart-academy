@@ -1,6 +1,16 @@
 import { Link } from "react-router-dom";
+import avatarImg from "../../../assets/images/avatar.jpg";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProviders";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.log(error));
+  };
+
   const navItem = (
     <>
       <li>
@@ -45,7 +55,7 @@ const Navbar = () => {
               {navItem}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-2xl text-cyan-300">
+          <a className="btn btn-ghost normal-case text-2xl text-[#AC46F7]">
             Smart <span className="text-yellow-500">Academy</span>
           </a>
         </div>
@@ -53,7 +63,28 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navItem}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          {user ? (
+            <>
+              <button
+                onClick={handleLogOut}
+                className="btn bg-[#3420b4] text-white"
+              >
+                Log Out
+              </button>
+              <div className="w-10 rounded-full">
+                <img src={user.photoURL} alt="User Avatar" />
+              </div>
+            </>
+          ) : (
+            <>
+              <Link to="/login" className="btn bg-[#3420b4] text-white mr-1">
+                Login
+              </Link>
+              <div className="w-10 rounded-full">
+                <img src={avatarImg} alt="Default Avatar" />
+              </div>
+            </>
+          )}
         </div>
       </div>
     </>
