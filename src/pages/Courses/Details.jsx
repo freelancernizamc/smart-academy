@@ -45,19 +45,21 @@ const Details = ({ data, onEnroll }) => {
           />
         </div>
         <div className="w-1/2">
-          <div className="bg-white shadow-lg rounded-lg p-6">
-            <h2 className="text-2xl text-black font-bold mb-4">
+          <div className="bg-white shadow-lg rounded-lg p-6 mb-2">
+            <h2 className="text-3xl text-black font-bold mb-4">
               Course Name: {courseName}
             </h2>
 
             <p className="text-gray-700 text-base mb-4">
               Description: {description}
             </p>
-            <p className="text-gray-700 text-base">Duration: {duration}</p>
-            <p className="text-gray-700 text-base">Price: {price}</p>
+            <p className="text-gray-700 text-base font-bold">
+              Duration: {duration}
+            </p>
+            <p className="text-gray-700 text-base font-bold">Price: {price}</p>
           </div>
           <button
-            className="btn btn-primary"
+            className="btn bg-cyan-300 text-black hover:text-white"
             onClick={() => {
               EnrolledCourses(course);
             }}

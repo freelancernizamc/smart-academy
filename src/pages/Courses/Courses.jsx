@@ -47,7 +47,7 @@ const Courses = () => {
 
             <p>Duration: {course.duration}</p>
             <p>Price: {course.price}</p>
-            <button className="btn bg-cyan-300 text-black mt-2">
+            <button className="btn bg-cyan-300 text-black hover:text-white mt-2">
               <Link to={`/details/${course.id}`}>See Details</Link>
             </button>
           </div>

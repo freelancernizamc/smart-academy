@@ -55,7 +55,7 @@ const Navbar = () => {
               {navItem}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-2xl text-[#AC46F7]">
+          <a className="btn btn-ghost normal-case text-2xl text-cyan-300">
             Smart <span className="text-yellow-500">Academy</span>
           </a>
         </div>
@@ -67,7 +67,7 @@ const Navbar = () => {
             <>
               <button
                 onClick={handleLogOut}
-                className="btn bg-[#3420b4] text-white"
+                className="btn bg-cyan-300 text-black hover:text-white"
               >
                 Log Out
               </button>
@@ -77,7 +77,10 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <Link to="/login" className="btn bg-[#3420b4] text-white mr-1">
+              <Link
+                to="/login"
+                className="btn bg-cyan-300 text-black hover:text-white mr-1"
+              >
                 Login
               </Link>
               <div className="w-10 rounded-full">
